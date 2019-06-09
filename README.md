@@ -8,3 +8,9 @@ List of shortcuts, useful commands and my best practices. That repo will be in p
 - media (ffmpeg)
 
 [console](console.md)
+
+## desktop
+
+- telegram
+
+[desktop](desktop.md)
