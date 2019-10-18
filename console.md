@@ -1,32 +1,5 @@
 # Console
 
-## Git
-
-### Multiple github accounts
-
-- 1: [Multiple github accounts on the same computer?](https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same-computer)
-- 2: [Push to github without password using ssh-key](https://stackoverflow.com/questions/14762034/push-to-github-without-password-using-ssh-key)
-
-```
-# create ssh keys
-ssh-keygen -t rsa -C "user1@mail.xx" -f "id_rsa_user1"
-ssh-keygen -t rsa -C "user1@mail.xx" -f "id_rsa_user2"
-# ... ; and then add pub rsa keys into git/settings/SSH and GPG Keys
-
-# preparation
-git clone repo
-git remote set-url origin git@github.com:<username>/<project>.git
-ssh-agent  # for win
-
-# main part - choose identity
-ssh-add -D
-ssh-add ~/.ssh/id_rsa_user_identity
-
-# post
-git commit -a -m "message"
-git push
-```
-
 ## Media
 
 ### concat video using ffmpeg
